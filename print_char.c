@@ -11,10 +11,11 @@
 
 int print_char(va_list c)
 {
-unsigned char my_ch;
-my_ch = va_arg(c, int);
-_putchar(my_ch);
-return (1);
+	unsigned char my_ch;
+
+	my_ch = va_arg(c, int);
+	_putchar(my_ch);
+	return (1);
 }
 
 /**
@@ -23,6 +24,6 @@ return (1);
  */
 int print_percent(void)
 {
-_putchar('%');
-return (1);
+	_putchar('%');
+	return (1);
 }
